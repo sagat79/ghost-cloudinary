@@ -1,5 +1,4 @@
-# ghost-cloudinary
-Ghost blog use cloudinary as storage.
+# ghost-cloudinary [![Docker Image CI](https://github.com/sagat79/ghost-cloudinary/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/sagat79/ghost-cloudinary/actions/workflows/main.yml)
 
 This project uses Cloudinary image storage module for Ghost blog write by [eexit](https://github.com/eexit/ghost-storage-cloudinary). 
 
@@ -70,5 +69,4 @@ services:
       - ./ghost-cloudinary/mysql:/var/lib/mysql
 ```
 
-### Docker Pull: 
-[docker pull sagat79/ghost-cloudinary](https://hub.docker.com/r/sagat79/ghost-cloudinary).
+### Docker Hub [sagat79/ghost-cloudinary](https://hub.docker.com/r/sagat79/ghost-cloudinary)
