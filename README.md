@@ -71,4 +71,4 @@ services:
 ```
 
 ### Docker Pull: 
-[docker pull ghost-cloudinary:latest](https://hub.docker.com/r/sagat79/ghost-cloudinary).
+[docker pull sagat79/ghost-cloudinary](https://hub.docker.com/r/sagat79/ghost-cloudinary).
