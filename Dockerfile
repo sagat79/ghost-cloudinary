@@ -1,6 +1,6 @@
 FROM ghost:5-alpine as cloudinary
-RUN apk add g++ make python3
-RUN su-exec node yarn add ghost-storage-cloudinary
+WORKDIR $GHOST_INSTALL/current
+RUN su-exec node yarn add ghost-storage-cloudinary@2
 
 FROM ghost:5-alpine
 COPY --chown=node:node --from=cloudinary $GHOST_INSTALL/current/node_modules $GHOST_INSTALL/current/node_modules
