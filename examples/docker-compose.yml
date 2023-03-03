@@ -43,6 +43,7 @@ services:
       #- ./ghost-cloudinary/config.production.json:/var/lib/ghost/config.production.json
       #- ./ghost-cloudinary/node_modules:/var/lib/ghost/node_modules
       
+      
   db:
     container_name: ghost_mysql
     image: mysql:latest
