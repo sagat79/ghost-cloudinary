@@ -34,13 +34,13 @@ jobs:
         docker pull $DH_UNAME/ghost-cloudinary:latest || :
         docker buildx build --push --platform linux/arm64/v8,linux/amd64 --cache-from $DH_UNAME/ghost-cloudinary:latest --pull --file Dockerfile --tag $DH_UNAME/ghost-cloudinary:latest .
 
-  Ping-Success:
+  Build-Success:
     runs-on: ubuntu-latest
     needs: [Main-Job]
     steps:
       - run: curl -m 10 --retry 5 ${{ secrets.HEALTHCHECKS_DIMOV }}
 
-  Ping-Failure:
+  Build-Failure:
     runs-on: ubuntu-latest
     if: ${{ failure() }}
     needs: [Main-Job]
