@@ -1,0 +1,17 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended"
+	],
+	"assignees": [
+		"sagat79"
+	],
+	"reviewers": [
+		"sagat79"
+	],
+	"labels": [
+		"dependencies"
+	],
+  "osvVulnerabilityAlerts": true,
+	"dependencyDashboardOSVVulnerabilitySummary": "all"
+}
