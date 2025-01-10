@@ -1,4 +1,4 @@
-# ghost-cloudinary [![Docker Image CI](https://github.com/sagat79/ghost-cloudinary/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/sagat79/ghost-cloudinary/actions/workflows/main.yml)
+# ghost-cloudinary
 
 This project uses Cloudinary image storage module for Ghost blog write by [eexit](https://github.com/eexit/ghost-storage-cloudinary). 
 
