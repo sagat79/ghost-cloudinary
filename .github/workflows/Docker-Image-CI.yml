@@ -1,6 +1,7 @@
 name: Ghost Cloudinary Docker Image CI
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: 0 9 * * *
   push:
