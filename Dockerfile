@@ -1,8 +1,9 @@
-FROM ghost:6-alpine as cloudinary
-RUN apk add g++ make python3
+FROM ghost:6-alpine AS cloudinary
+RUN apk add g++ make python3 su-exec
 RUN su-exec node yarn add ghost-storage-cloudinary --ignore-engines
 
 FROM ghost:6-alpine
+RUN apk add --no-cache su-exec
 COPY --chown=node:node --from=cloudinary $GHOST_INSTALL/node_modules $GHOST_INSTALL/node_modules
 COPY --chown=node:node --from=cloudinary $GHOST_INSTALL/node_modules/ghost-storage-cloudinary /var/lib/ghost/content/adapters/storage/ghost-storage-cloudinary
 
